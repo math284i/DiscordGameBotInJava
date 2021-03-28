@@ -15,8 +15,7 @@ public class Television {
 
     //Main method, on start
     public static void main(String[] args) throws LoginException, InterruptedException {
-        JDABuilder builder = JDABuilder.createDefault("ODI1ODMzNDkwNDk0MjU5MjMw.YGDrXw.i7o_wZ2-SsJekH6wjLyxBKbm_ZI");
-        //jda = new JDABuilder(AccountType.BOT).setToken("ODI1ODMzNDkwNDk0MjU5MjMw.YGDrXw.i7o_wZ2-SsJekH6wjLyxBKbm_ZI").addEventListeners(new Commands()).build();
+        JDABuilder builder = JDABuilder.createDefault("Haha no way imma reveal this");
         jda = builder.build();
         //jda.getPresence().setStatus(OnlineStatus.IDLE);
         jda.getPresence().setActivity(Activity.watching("You all lose!"));
