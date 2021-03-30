@@ -1,4 +1,4 @@
-package techtoolboxTutorial;
+package techtoolboxTutorial.Commands;
 
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Guild;
@@ -6,11 +6,16 @@ import net.dv8tion.jda.api.entities.MessageChannel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import techtoolboxTutorial.Television;
 
-public class Commands extends ListenerAdapter {
+public class Temp extends ListenerAdapter {
 
     public void onMessageReceived(MessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
+
+        //Guild guild = event.getGuild(); // Get the guild that the user joined.
+        //User user = event.getUser();    // Get the user that joined.
+        //JDA client = event.getJDA();    // Get the already existing JDA instance.
 
         if (args[0].equalsIgnoreCase(Television.prefix + "info")) {
             EmbedBuilder info = new EmbedBuilder();
@@ -44,6 +49,11 @@ public class Commands extends ListenerAdapter {
 
 
     }
+
+
+
+
+
 
     /*
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
